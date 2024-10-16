@@ -17,6 +17,12 @@ function createGrid(pixels) {
             const box = document.createElement("div");
             box.setAttribute("class", "item");
             row.appendChild(box);
+            box.addEventListener("mouseenter", () => {
+                box.classList.add("filled");
+            })
+            box.addEventListener("mouseenter", () => {
+                box.classList.add("filled");
+            })
         }
         container.appendChild(row);
     }
